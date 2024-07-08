@@ -1,0 +1,10 @@
+{
+  "name": "nx-expo-problem-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/nx-expo-problem-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["nx-expo-problem"],
+  "// targets": "to see all targets run: nx show project nx-expo-problem-e2e --web",
+  "targets": {}
+}
