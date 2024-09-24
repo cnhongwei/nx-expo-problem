@@ -55,6 +55,3 @@ npm-debug.*
 *.orig.*
 web-build/
 cache/
-
-
-apps/nx-expo-problem-e2e/artifacts
