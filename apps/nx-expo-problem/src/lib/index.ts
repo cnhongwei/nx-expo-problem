@@ -22,7 +22,7 @@ export function usePersonList() {
         Realm.open({ path: "testdb", schema: [PersonSchema] } as Realm.ConfigurationWithoutSync).then(realm => {
             realm.write(() => {
                 // Assign a newly-created instance to the variable.
-                realm.create("Person", { name: String(Math.random()) });
+                realm.create("Person", { name: "apps-" + String(Math.random()) });
             });
             const list = realm.objects("Person").filtered("id != null SORT(id DESC) LIMIT(10)");
             setPerson(list.map(i => ({ id: String(i.id), name: String(i.name) })));

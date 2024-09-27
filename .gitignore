@@ -4,6 +4,11 @@
 dist
 tmp
 /out-tsc
+build-*.aab
+build-*.apk
+build-*.ipa
+build-*.tar.gz
+*.app/
 
 # dependencies
 node_modules
